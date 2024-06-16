@@ -19,7 +19,7 @@ jobs:
       run: |
         # 安装所需依赖包 | Install required dependency packages
         sudo apt-get update -y
-        sudo apt install curl zip -y
+        sudo apt install curl zip tree -y
 
     - name: Build
       run: |
@@ -27,6 +27,8 @@ jobs:
         sudo mkdir /home/lyrecoul
         sudo chmod 0777 /home/lyrecoul
         ln -s ./ /home/lyrecoul/PenDevelopment
+
+        tree /home
 
         # 编译编译器
         ./ct-ng/bin/ct-ng build
