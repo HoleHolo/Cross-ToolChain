@@ -28,11 +28,10 @@ jobs:
 
         # 路径修正
         sudo mkdir /home/lyrecoul
-        sudo chmod 0777 /home/lyrecoul
-        ln -s ./Cross-ToolChain /home/lyrecoul/PenDevelopment
+        sudo ln -s ./ /home/lyrecoul/PenDevelopment
 
         # 编译编译器
-        ./ct-ng/bin/ct-ng build
+        sudo ./ct-ng/bin/ct-ng build
 
         # 压缩编译产物
         zip -rq ./tool.zip ./ToolChain
