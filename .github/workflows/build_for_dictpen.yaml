@@ -27,6 +27,10 @@ jobs:
         sudo mkdir /home/lyrecoul
         sudo cp -r ./ /home/lyrecoul/PenDevelopment
 
+        mkdir src
+        mkdir src/linux
+        curl -q -o ./src/linux-4.4.302.tar.gz https://mirrors.tuna.tsinghua.edu.cn/kernel/v4.x/linux-4.4.302.tar.gz
+
         # 编译编译器
         ./ct-ng/bin/ct-ng build
 
