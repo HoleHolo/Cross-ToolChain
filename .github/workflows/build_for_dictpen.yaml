@@ -28,7 +28,7 @@ jobs:
         sudo cp -r ./ /home/lyrecoul/PenDevelopment
 
         # 编译编译器
-        sudo ./ct-ng/bin/ct-ng build
+        ./ct-ng/bin/ct-ng build
 
         # 压缩编译产物
         zip -rq ./tool.zip ./ToolChain
