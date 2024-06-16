@@ -23,13 +23,13 @@ jobs:
 
     - name: Build
       run: |
+        echo $0
+        ls
+
         # 路径修正
         sudo mkdir /home/lyrecoul
         sudo chmod 0777 /home/lyrecoul
-        cd /home/worker/work/Cross-ToolChain/Cross-ToolChain
-        ln -s ./ /home/lyrecoul/PenDevelopment
-
-        tree /home
+        ln -s ./Cross-ToolChain /home/lyrecoul/PenDevelopment
 
         # 编译编译器
         ./ct-ng/bin/ct-ng build
