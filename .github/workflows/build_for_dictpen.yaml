@@ -25,7 +25,7 @@ jobs:
       run: |
         # 路径修正
         sudo mkdir /home/lyrecoul
-        sudo cp ./ /home/lyrecoul/PenDevelopment
+        sudo cp -r ./ /home/lyrecoul/PenDevelopment
 
         # 编译编译器
         sudo ./ct-ng/bin/ct-ng build
