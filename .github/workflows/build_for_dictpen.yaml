@@ -35,7 +35,7 @@ jobs:
         ./ct-ng/bin/ct-ng build
 
         # 压缩编译产物
-        zip -rq ./tool.zip ./ToolChain
+        zip -rq ./tool.zip ${HOME}/PenDevelopment/ToolChain
 
     - name: Upload Zip File
       uses: actions/upload-artifact@v3
