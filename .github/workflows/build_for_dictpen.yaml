@@ -40,5 +40,5 @@ jobs:
     - name: Upload Zip File
       uses: actions/upload-artifact@v3
       with:
-        name: kernel-${{ steps.get_time.outputs.TIME }}
+        name: tool.zip
         path: "tool.zip"
