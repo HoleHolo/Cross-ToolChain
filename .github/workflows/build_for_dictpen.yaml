@@ -38,7 +38,7 @@ jobs:
         zip -rq ./tool.zip ${HOME}/PenDevelopment/ToolChain
 
     - name: Upload Zip File
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4.6.2
       with:
         name: tool.zip
         path: "tool.zip"
